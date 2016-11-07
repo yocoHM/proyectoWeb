@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="../css/dashboard.css" rel="stylesheet">
+ </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Proyecto Bitcoin</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Mi Perfil</a></li>
+            <li><a href="#">Salir</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Transacciones <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reportes</a></li>
+            <li><a href="#">Gráficas</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h2 class="sub-header">Transacciones</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>No. de cuenta que envía</th>
+                  <th>No. de cuenta que recibe</th>
+                  <th>Fecha</th>
+                  <th>Cantidad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>0204924176</td>
+                  <td>6172637465</td>
+                  <td>07/11/2016</td>
+                  <td>$1236.00</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>1234567890</td>
+                  <td>6172637465</td>
+                  <td>08/11/2016</td>
+                  <td>$712.32</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>1029384756</td>
+                  <td>6172637465</td>
+                  <td>09/11/2016</td>
+                  <td>$1728.91</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2617489037</td>
+                  <td>6172637465</td>
+                  <td>10/11/2016</td>
+                  <td>$1552.19</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>6482940596</td>
+                  <td>1662748003</td>
+                  <td>11/11/2016</td>
+                  <td>$1727.67</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>4176800365</td>
+                  <td>1662748003</td>
+                  <td>12/11/2016</td>
+                  <td>$1827.10</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>1738993552</td>
+                  <td>1662748003</td>
+                  <td>13/11/2016</td>
+                  <td>$1526.96</td>
+                </tr>
+                <tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  </body>
+</html>
