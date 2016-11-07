@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="../css/registro.css" rel="stylesheet">
+
+</head>
+
+<body>
+        <h1 class="text-center">Registro</h1>
+        <form action="../php/usuario.php" method="post" enctype="multipart/form-data" class="form-registro">
+        <!-- Nombre -->
+        <div class="input-group input-group-md">
+              <span class="input-group-addon" id="sizing-addon1">Nombre</span>
+              <input type="text" name="nombre" class="form-control" placeholder="Nombre" aria-describedby="sizing-addon1" required>
+              
+        </div>
+        <br/>
+
+        <!-- Apellidos -->
+        <div class="input-group input-group-md">
+              <span class="input-group-addon" id="sizing-addon1">Apellidos</span>
+              <input type="text" name="apellidos" class="form-control" placeholder="Apellidos" aria-describedby="sizing-addon1" required>
+        </div>
+        <br/>
+
+       <!--  Dirección -->
+        <div class="input-group input-group-md">
+              <span class="input-group-addon" id="sizing-addon1">Dirección</span>
+              <input type="text" name="direccion" class="form-control" placeholder="Dirección" aria-describedby="sizing-addon1" required>
+        </div>
+        <br/>
+
+        <!-- Pais -->
+        <div class="input-group input-group-md">
+              <span class="input-group-addon" id="sizing-addon1">País</span>
+              <input type="text" name="pais" class="form-control" placeholder="País" aria-describedby="sizing-addon1" required>
+        </div>
+        <br/>
+
+        <!-- Tipo de cambio -->
+        <div class="input-group input-group-md">
+              <span class="input-group-addon" id="sizing-addon1">Tipo de cambio</span>
+              <input type="text" name="tipoDeCambio" class="form-control" placeholder="Tipo de cambio" aria-describedby="sizing-addon1" required>
+        </div>
+        <br/>
+
+        <!-- Imagen -->
+        <div class="input-group input-group-md">
+              <span class="input-group-addon" id="sizing-addon1">Imagen</span>
+              <input type="hidden" name="MAX_FILE_SIZE" value="1024000" class="form-control" aria-describedby="sizing-addon1">
+              <input type="file" size="44" name="imagen">
+        </div>
+        <br/>
+
+        <!-- Contraseña -->
+        <div class="input-group input-group-md">
+              <span class="input-group-addon" id="sizing-addon1">Contraseña</span>
+              <input type="password" name="pass" class="form-control" placeholder="Contraseña" aria-describedby="sizing-addon1" required>
+              <input type="hidden" name="op" value="insertar">
+        </div>
+        <br/>
+
+        <div class="text-center">
+                <input type="submit" value="Registrarse" class="btn btn-primary btn-lg text-center">
+        </div>
+        </form>
+
+</body>
+</html>
