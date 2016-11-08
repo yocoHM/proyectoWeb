@@ -1,0 +1,21 @@
+<h2 class="sub-header">Nueva Cuenta</h2>
+
+<form action="../php/cuenta.php" method="post">
+	<h3>Alias de la Cuenta: </h3>
+	<input type="text" name="alias" class="form-control" placeholder="Alias" required>
+	<h3>Saldo Inicial: </h3>
+	<input type="text" name="cantidad" class="form-control" placeholder="Saldo inicial" required>
+	<input type="hidden" name="op" value="insertar">
+	<br/>
+
+	<div="row">
+		<div class="col-md-4">
+		</div>
+		<div class="col-md-4">
+			<button class="btn btn-lg btn-success btn-block" type="submit">Crear Cuenta</button>
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+
+</form>

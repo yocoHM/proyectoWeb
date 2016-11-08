@@ -1,12 +1,13 @@
-<h2 class="sub-header">Nueva transacción</h2>
+<h2 class="sub-header">Nueva Transacción</h2>
 
-<form action="" method="get" enctype="multipart/form-data">
+<form action="../php/transaccion.php" method="post" enctype="multipart/form-data">
 	<h3>Cuenta remitente: </h3>
-	<input type="text" name="remitente" class="form-control" placeholder="No. de cuenta" required>
+	<input type="text" name="cuentaEmisora" class="form-control" placeholder="No. de cuenta" required>
 	<h3>Cuenta destino: </h3>
-	<input type="text" name="destino" class="form-control" placeholder="No. de cuenta" required>
+	<input type="text" name="cuentaRecipiente" class="form-control" placeholder="No. de cuenta" required>
 	<h3>Cantidad a enviar: </h3>
 	<input type="text" name="cantidad" class="form-control" placeholder="Cantidad $" required>
+	<input type="hidden" name="op" value="insertar">
 	<br/>
 
 	<div="row">
@@ -20,5 +21,3 @@
 	</div>
 
 </form>
-
-

@@ -57,11 +57,9 @@
         </div>
         <br/>
 
-        <!-- Imagen -->
         <div class="input-group input-group-md">
-              <span class="input-group-addon" id="sizing-addon1">Imagen</span>
-              <input type="hidden" name="MAX_FILE_SIZE" value="1024000" class="form-control" aria-describedby="sizing-addon1">
-              <input type="file" size="44" name="imagen">
+              <span class="input-group-addon" id="sizing-addon1">Email</span>
+              <input type="email" name="email" class="form-control" placeholder="emial" aria-describedby="sizing-addon1" required>
         </div>
         <br/>
 
@@ -73,7 +71,16 @@
         </div>
         <br/>
 
+        <!-- Imagen -->
+        <div class="input-group input-group-md">
+              <span class="input-group-addon" id="sizing-addon1">Imagen</span>
+              <input type="hidden" name="MAX_FILE_SIZE" value="1024000" class="form-control" aria-describedby="sizing-addon1">
+              <input type="file" size="44" name="imagen">
+        </div>
+        <br/>
+
         <div class="text-center">
+                 <input type="hidden" name="op" value="insertar">
                 <input type="submit" value="Registrarse" class="btn btn-primary btn-lg text-center">
         </div>
         </form>
