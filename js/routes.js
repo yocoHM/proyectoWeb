@@ -22,6 +22,10 @@ var app = angular.module("dashboard",['ngRoute'])
       templateUrl: 'nuevaTransaccion.html',
       controller: 'MainCtrl'
     }).
+    when('/editarPerfil',{
+      templateUrl: 'editarPerfil.html',
+      controller: 'MainCtrl'
+    }).
     otherwise({redirectTo: '/transacciones'})
 }])
 
